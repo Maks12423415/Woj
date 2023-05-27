@@ -1,0 +1,79 @@
+#map {
+  grid-area: map;
+  height: 100vh;
+}
+
+#szukanie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  gap: 25px;
+}
+
+body {
+  margin: 0px;
+  display: grid;
+  grid-template-areas: "map gra";
+  grid-template-columns: 60% 40%;
+}
+
+#gra {
+  grid-area: gra;
+  height: 100vh;
+  background-color: gray;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 111%;
+  grid-template-areas:
+    "zycia"
+    "losowanie"
+    "refresh";
+  grid-template-rows: 33% 33% 33%;
+}
+#menu {
+  padding: 20px;
+  text-align: center;
+  background-color: aquamarine;
+}
+
+#wojewodz {
+  font-size: 24px;
+  color: #333;
+  animation: pulsate 2s infinite;
+  font-weight: bold;
+  font-style: italic;
+}
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#punkty {
+  font-size: 24px;
+  color: #666;
+  text-decoration: underline;
+}
+
+#zycia {
+  font-size: 24px;
+  color: #fd0000;
+  margin-top: 10px;
+  text-decoration: underline;
+}
+
+#serca {
+  font-size: 24px;
+  color: #ff0000;
+  margin-left: 5px;
+  text-shadow: 2px 2px 4px #000000;
+}
