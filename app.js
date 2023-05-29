@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Jeśli kliknięto poprawne województwo, zwiększ punkty, wylosuj nowe województwo
       punkty++;
       div_punkty.innerHTML = "Punkty: " + punkty;
-      alert("Gratulacje! Zdobywasz punkt. Masz " + punkty + " punktów.");
+      alert("Brawo! Masz teraz: " + punkty + " punktów.");
       wylosowane = losujWojewodztwo();
       console.log(wylosowane);
     } else {
@@ -84,7 +84,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
       zycia -= 1;
       aktualizujSerca();
-      alert("Niestety, spróbuj jeszcze raz. Zostały ci " + zycia + " życia.");
+      alert(
+        "Zła odpowiedź, spróbuj jeszcze raz. Pozostały ci: " + zycia + " życia."
+      );
       wylosowane = losujWojewodztwo();
       console.log(wylosowane);
 
