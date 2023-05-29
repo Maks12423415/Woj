@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   var punkty = 0;
-  var zycia = 3;
+  var zycia = 5;
 
   const div_punkty = document.getElementById("punkty");
   const div_zycia = document.getElementById("zycia");
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Dodaje podkład mapowy z OpenStreetMap
   L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    maxZoom: 19,
+    maxZoom: 10,
     attribution:
       '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
   }).addTo(map);
@@ -108,6 +108,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
       var game = document.createElement("h1");
       game.style.color = "white";
+      game.style.alignItems = "center";
+      game.style.justifyContent = "center";
       game.innerHTML = "GAME OVER";
       document.body.appendChild(game);
     }
